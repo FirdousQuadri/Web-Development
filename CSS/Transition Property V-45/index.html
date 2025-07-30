@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        .container {
+            background-color: antiquewhite;
+            width: 50vw;
+            height: 40vh;
+        }
+
+        .box {
+            background-color: aquamarine;
+            width: 5vw;
+            height: 4vh;
+            /*  transition-property: transform;  
+          transition-property: all;   (by this we can apply in all property all together) */
+            transition-property: background-color, transform;
+            /* (by this we can make transition in any two fields) transition-duration: 3s;  */
+            transition-timing-function: ease-in-out; /*(cubic bezier is also there which are different types of timings)  */
+            transition-delay: 1s;
+            transition: all 3s ease-in-out 1s;  /* (in which all the 4 properties are written together)  */
+        }
+
+        .translate {
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            /* (by add scale(2) the size increases; ) */
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+
+</html>

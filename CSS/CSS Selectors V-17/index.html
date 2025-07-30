@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <!-- Internal CSS -->
+    <style>
+
+        /*  Element selector  */
+        div {
+            background-color: chartreuse;
+        }
+       
+        /*Class Selector*/
+
+        .red {
+            background-color: red;
+        }
+
+        /*    ID Selector  */
+        #green{
+
+            background-color: green
+
+        }
+
+
+        /*   Direct Child Selectors    */
+        div > p {
+
+            color: blue;
+           /* background-color: brown;*/
+
+        }
+
+        /*  Descendant Selectors  */
+
+        div p {
+
+            color: blue;
+           /* background-color: brown;*/
+        }
+
+        /*  Universal Selectors  */
+        * {
+            margin:0;
+            padding :0;
+        }
+
+        /*  Pseudo Selectors */
+
+        a:visited{
+            color: yellow;
+        }
+
+        a:link{
+            color: green
+        }
+
+        a:active{
+            background-color: red;
+        }
+    
+        a:hover{
+            background-color: yellow;
+        }
+
+        p :first-child{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+
+    <div class="red">
+    
+        I am a queen
+        <article>I am a sweet girl because i am a queen</article>
+
+    </div>
+
+    <div id="green">
+
+        <!-- <p>Firdous quadri is sweet girl</p> -->
+
+        I am also a princess
+
+    </div>
+
+    <div>
+
+        <article>
+
+           <!-- /* <p>Jai Hind ki Sena</p>  -->
+
+        </article>
+
+    </div>
+
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to Facebook2</a>
+
+</body>
+
+</html>

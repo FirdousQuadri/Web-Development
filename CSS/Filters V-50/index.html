@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        .img1 {
+            filter: brightness(302%) contrast(100%);
+            filter: opacity(0.3);
+        }
+
+        .img2 {
+            filter: drop-shadow(40%);
+            filter: invert(.61); /* (convert to negative images)  */
+        }
+
+        .img3 {
+            filter: grayscale(90%); /* (turn to gray & white)  */
+            filter: sepia(50%); /* (turn to kinda brown color)  */
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="img1" src="man.jpg" alt="">
+        <img class="img2" src="bilal.jpg" alt="">
+        <img class="img3" src="wahaj.webp" alt="">
+    </div>
+</body>
+
+</html>

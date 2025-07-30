@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-fit & Object-cover</title>
+    <style>
+        .container {
+            height: 488px;
+            width: 466px;
+            border: 2px solid black;
+            /*  background-color: azure;  */
+            background-image: url(bird.jpg);
+            background-position: center center;
+            background-clip: border-box; /* (check MDN reference for other features)  */
+            background-repeat: no-repeat;  /* (incase when image is smaller and it gets repeated) */
+        }
+
+        /*     img {
+            width: 466px;
+            height: 488px;
+            /*  object-fit: cover; (it will cover the whole above mentioned property but will cut some part of image to cover the place) 
+            object-fit: contain;  (it will show the full image but will leave space some in top & also in bottom)*/
+        /*  object-fit: fill;  (it will fill the entire space mentioned even if the img is distorted. Other are also there such as "scale-down or none")
+            object-position: bottom right;  */
+        /*    object-fit: cover;
+            object-position: 50% 20px; (can use "% together" or "px together" or "% & px together")
+        }   */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- /*   <img src="Photo.jpg" alt="">   -->
+    </div>
+</body>
+
+</html>
